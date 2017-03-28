@@ -13,31 +13,37 @@
 		<!-- My app main page -->
 		<div data-role="page" id="pageone">
 		  <div data-role="header">
-			<h1>GUI</h1>
+			<h1>Tourist attractions</h1>
 		  </div>
 		  <div data-role="main" class="ui-content">
-			<p>Jakub Kalbarczyk</p>
-			<p>kuba.kalbarczyk@gmail.com</p>
-			<p>Infoirmatyka stosowana</p>
-			<a href="#interests" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" onclick="deviceInfo()">Interests</a>
+			<p>Wybiertz jeden z poniższych przycisków:</p>
+			<a href="#masuria"  class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Masuria</a>
+			<a href="#pomerania" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Pomerania</a>
+			<a href="#thetatramountains" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">The Tatra Mountains</a>
 		  </div>
 		  <div data-role="footer" data-position="fixed">
 			<h1>(c) Kuba Kalbarczyk</h1>
 		  </div> 
 		</div> 
 		
-		<!-- Interests page -->
-		<div data-role="page" id="interests" data-dialog="true">
-			<div data-role="header" data-theme="a">
-				<h1>Interests</h1>
-			</div>
-			<div role="main" class="ui-content">
-				<p> Sport </p>
-				<p> IT </p>
-				<p> Gaming </p>
-				<a href="#pageone" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Back</a>
-			</div>
-		</div>		
+		<!-- Masuria page -->
+		<div data-role="page" id="masuria">
+			<div data-role="header">
+			<h1>Welcome Masuria</h1>
+  </div>
+
+  <div id="pageone" data-role="main" class="ui-content">
+    <p>Click on the image to enlarge it.</p>
+    <p>Notice the dark overlay.</p>
+    <a href="#myPopup" data-rel="popup" data-position-to="window">
+    <img src="img/1.jpeg" alt="Skaret View" style="width:200px;"></a>
+
+    <div data-role="popup" id="myPopup" data-overlay-theme="b">
+      <p>This is my picture!</p> 
+      <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="img/1.jpeg" style="width:800px;height:400px;" alt="Skaret View">
+    </div>
+  </div>
+	
 	
 	</body>
 </html>
